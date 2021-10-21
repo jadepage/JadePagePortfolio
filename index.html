@@ -696,7 +696,8 @@
           <div class="row">
             <!-- Contact form-->
             <div class="col-12">
-              <form name="contact" data-netlify="true" data-netlify-recaptcha="true" id="contact-form" method="POST">
+              <form class="contact-form" name="contact" data-netlify="true" data-netlify-recaptcha="true"
+                id="contact-form" method="POST">
                 <div class="row">
                   <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text"
                       name="name" placeholder="Name" required=""></div>
@@ -706,6 +707,9 @@
                       name="subject" placeholder="Subject" required=""></div>
                   <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message"
                       name="message" placeholder="Message" rows="5" required=""></textarea></div>
+                  <div class="col-12">
+                    <div class="mb-3" data-netlify-recaptcha="true"></div>
+                  </div>
                   <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit"
                       type="submit">Send message</button>
                     <p class="contact-feedback"></p>
